@@ -1,6 +1,7 @@
 package fastrpc
 
 type Options struct {
+	KeepAliveSec int
 }
 
 type Option func(opts *Options)
