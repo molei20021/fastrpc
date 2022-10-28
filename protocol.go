@@ -13,3 +13,17 @@ type Package struct {
 	Payload   []byte
 	Data      []byte
 }
+
+type PayloadType byte
+
+const (
+	PayloadTypeJson PayloadType = iota
+	PayloadTypeProtobuf
+)
+
+type CompressType byte
+
+const (
+	CompressTypeGzip CompressType = iota
+	CompressTypeSnappy
+)
